@@ -2,7 +2,9 @@ import Head from "next/head";
 import { FaFacebookF, FaGoogle, FaGithub, FaRegEnvelope } from "react-icons/fa";
 import { MdLockOutline } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
+import { useSession, signIn, signOut } from "next-auth/react";
 export default function Home() {
+  const { data: session } = useSession();
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -39,7 +41,7 @@ export default function Home() {
                   <FcGoogle className="text-2xl" />
                 </a>
                 <a
-                  href="#"
+                  href="/api/auth/signin"
                   className="border-2 border-gray-100 rounded-full p-3 mx-1"
                 >
                   <FaGithub className="text-2xl" />
