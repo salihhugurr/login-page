@@ -16,12 +16,12 @@ export default function Home() {
         <div className="bg-white rounded-xl shadow-2xl w-2/3 max-w-4xl flex">
           {/* Sign In */}
           <div className="w-3/5 p-5">
-            <div className="text-left font-bold">
+            <div className="text-left text-sm sm:text-xl font-bold">
               <span className="text-green-700 font-bold">NDB</span>Learning
             </div>
             <div className="py-10">
-              <div className="text-3xl font-bold text-gray-900">
-                <span className="text-3xl font-bold text-green-700 mb-2">
+              <div className="text-sm sm:text-xl font-bold text-gray-900">
+                <span className="text-sm sm:text-2xl font-bold text-green-700 mb-2">
                   Sign in to NDB
                 </span>
                 Learning
@@ -32,44 +32,46 @@ export default function Home() {
                   href="#"
                   className="border-2 border-gray-100 rounded-full p-3 mx-1"
                 >
-                  <FaFacebookF className="text-2xl text-blue-900" />
+                  <FaFacebookF className="text-sm sm:text-xl text-blue-900" />
                 </a>
                 <a
                   href="#"
                   className="border-2 border-gray-100 rounded-full p-3 mx-1"
                 >
-                  <FcGoogle className="text-2xl" />
+                  <FcGoogle className="text-sm sm:text-xl" />
                 </a>
                 <a
                   href="/api/auth/signin"
                   className="border-2 border-gray-100 rounded-full p-3 mx-1"
                 >
-                  <FaGithub className="text-2xl" />
+                  <FaGithub className="text-sm sm:text-xl" />
                 </a>
               </div>
-              <p className="text-gray-400 my-3">or use your email account</p>
+              <p className="text-gray-400 text-sm sm:text-l  my-3">
+                or use your email account
+              </p>
               <div className="flex flex-col items-center mb-3">
-                <div className="bg-gray-100 w-64 p-2 flex items-center">
+                <div className="bg-gray-100 w-32 sm:w-45 md:w-60 p-2 flex items-center">
                   <FaRegEnvelope className="text-gray-400 m-2" />
                   <input
                     type="email"
                     name="email"
                     placeholder="Email"
-                    className="bg-gray-100 outline-none"
+                    className="bg-gray-100 outline-none w-full"
                   />
                 </div>
               </div>
               <div className="flex flex-col items-center mb-3">
-                <div className="bg-gray-100 w-64 p-2 flex items-center">
+                <div className="bg-gray-100 w-32 sm:w-45 md:w-60 p-2 flex items-center">
                   <MdLockOutline className="text-gray-400 m-2" />
                   <input
                     type="password"
                     name="password"
                     placeholder="Password"
-                    className="bg-gray-100 outline-none"
+                    className="bg-gray-100 outline-none w-full"
                   />
                 </div>
-                <div className="flex justify-between items-center mt-3 w-64 mb-5">
+                <div className="flex justify-between items-center mt-3 w-32 sm:w-45 md:w-60 mb-5">
                   <label className="text-xs items-center flex">
                     <input type="checkbox" name="remember" className="mr-1" />
                     Remember me
@@ -80,7 +82,7 @@ export default function Home() {
                 </div>
                 <a
                   href="#"
-                  className="border-2 border-green-700 text-green-700 rounded-full px-12 py-2 inline-block font-semibold hover:font-bold hover:bg-green-700 hover:border-white hover:text-white"
+                  className="border-2 border-green-700 text-green-700 rounded-full px-5 sm:px-10 sm:py-2 py-1 inline-block font-semibold hover:font-bold hover:bg-green-700 hover:border-white hover:text-white"
                 >
                   Sign in
                 </a>
@@ -89,17 +91,17 @@ export default function Home() {
           </div>
 
           {/* Sign Up */}
-          <div className="w-2/5 bg-green-700 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
-            <h2 className="text-3xl font-bold mb-2">Hello!</h2>
+          <div className="w-3/5 bg-green-700 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12">
+            <h2 className="text-sm sm:text-2xl font-bold mb-2">Hello!</h2>
             <div className="border-2 w-10 border-white inline-block mb-2"></div>
-            <p className="mb-10">
+            <p className="mb-10 text-sm sm:text-l">
               Fill up personal information and start journey with us!
             </p>
             <a
               href="#"
-              className="border-2 border-white rounded-full px-12 py-2 inline-block font-semibold hover:font-bold hover:bg-white hover:border-white hover:text-green-700"
+              className="border-2 border-white rounded-full px-5 sm:px-10 sm:py-1 py-1 inline-block font-semibold hover:font-bold hover:bg-white hover:border-white hover:text-green-700"
             >
-              Sign Up
+              Sign up
             </a>
           </div>
         </div>
